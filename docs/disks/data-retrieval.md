@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Disks
 search_exclude: false
-last_modified_date: 2022-06-28
+last_modified_date: 2022-08-01
 ---
 
 # Data Retrieval
@@ -27,26 +27,24 @@ Once opened, you can drag and drop files to another disk that you mount into the
 
 ## Testdisk to recover partitions or a partition table 
 
-This is usually reservered for software/virus issues that cause partition table damage. Not for a damaged disk.
+This is usually reserved for software/virus issues that cause partition table damage. Not for a damaged disk.
 
 [Using Testdisk to recover partition tables](https://www.howtoforge.com/data_recovery_with_testdisk)
 
 
 ## Data Recovery Flow Chart
 
-![image3](https://www.data-medics.com/recovery/wp-content/uploads/2016/03/Data-Recovery-Procedure.png)
+![image3](/assets/data-recovery/data-flow-chart.webp)
 
 ## Cloning Software
 
 Before starting data recovery on a damage disk, it is important to clone the disk to a new one. This will help avoid causing additional damage to the original disk.
 
-You can use ddrescue in a Linux Live session, or you can use CloneZilla.
-
-[Clonezilla Download](https://clonezilla.org/downloads.php)
+You can [use ddrescue in a Linux Live session](), or you can [use CloneZilla]().
 
 ## Recovery Software
 
-Once you have a cloned disk, or if the data isnt very important and you decide to recover directly from the damage disk, there are many options for recovery software.
+Once you have a cloned disk, or if the data isn't very important and you decide to recover directly from the damage disk, there are many options for recovery software.
 
 We recommend a paid software called R-Studio Pro.
 
