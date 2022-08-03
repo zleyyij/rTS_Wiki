@@ -40,7 +40,7 @@ This is usually reserved for software/virus issues that cause partition table da
 
 Before starting data recovery on a damage disk, it is important to clone the disk to a new one. This will help avoid causing additional damage to the original disk.
 
-You can [use ddrescue in a Linux Live session](), or you can [use CloneZilla]().
+You can [use ddrescue in a Linux Live session](/docs/disks/ddrescue), or you can [use CloneZilla]().
 
 ## Recovery Software
 
