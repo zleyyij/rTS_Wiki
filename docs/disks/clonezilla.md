@@ -27,46 +27,62 @@ These steps are for writing to a local device, the tool can also be used for wri
 
     ![clonezilla-local-dev](/assets/clonezilla/clonezilla-local-dev.png)
 
-    > If you are not using external media you may need to SKIP this step. Mount the internal disk to `/home/partimag` and Clonezilla will write to it.
+3. Clonezilla enumerates all available devices then asks where to store the image we are making.
 
-3. Choose "Beginner"
+    > Select the location to STORE the image. Not the disk that we are making an image of.
+
+    ![clonezilla-local-dev](/assets/clonezilla/clonezilla-storage-sel.png)
+
+4. You are asked where to store the image on the chosen disk. You can navigate the file structure by pressing "Enter" on any folder. When you have the correct destination selected, cycle to "Done" to continue.
+
+    ![clonezilla-folder0](/assets/clonezilla/clonezilla-folder0.png)
+    ![clonezilla-folder1](/assets/clonezilla/clonezilla-folder1.png)
+
+    > If you do not have a folder created you can create one in another terminal with the command `sudo mkdir /tmp/ocsroot_bind_root/Image_Destination`
+    > 
+    > Refresh the view of the disk with the "Browse" option.
+
+4. Choose "Beginner"
 
     ![clonezilla-level](/assets/clonezilla/clonezilla-level.png)
 
-4. Choose "savedisk", if you want to image specific partitions that is outside the scope of this guide.
+5. Choose "savedisk", if you want to image specific partitions that is outside the scope of this guide.
 
     ![clonezilla-level](/assets/clonezilla/clonezilla-save-type.png)
 
-5. Provide a file name for your image
+6. Provide a file name for your image
 
-    ![clonezilla-level](/assets/clonezilla/clonezilla-name.png)
+    ![clonezilla-name](/assets/clonezilla/clonezilla-name.png)
 
-6. Choose which disks you want to take an image of
+7. Choose which disks you want to take an image of
 
     > Identify your disk based on size and possibly by label.
 
-    ![clonezilla-level](/assets/clonezilla/clonezilla-disk-sel.png)
+    ![clonezilla-disk-sel](/assets/clonezilla/clonezilla-disk-sel.png)
 
-7. The default compression method should be fine.
+8. The default compression method should be fine.
 
-    ![clonezilla-level](/assets/clonezilla/clonezilla-compression.png)
+    ![clonezilla-compression](/assets/clonezilla/clonezilla-compression.png)
 
-8. In most cases you should skip the disk check and use the default option that Clonezilla provides.
+9. In most cases you should skip the disk check and use the default option that Clonezilla provides.
 
-    ![clonezilla-level](/assets/clonezilla/clonezilla-fs-check.png)
+    ![clonezilla-fs-check](/assets/clonezilla/clonezilla-fs-check.png)
 
-9. Checking the image was successful is the default and encouraged. Disable it if you want to save time.
+10. Checking the image was successful is the default and encouraged. Disable it if you want to save time.
 
-    ![clonezilla-level](/assets/clonezilla/clonezilla-integrity.png)
+    ![clonezilla-integrity](/assets/clonezilla/clonezilla-integrity.png)
 
-10. Encrypting the image is not withing the scope of this guide but is possible.
+11. Encrypting the image is not withing the scope of this guide but is possible.
 
-    ![clonezilla-level](/assets/clonezilla/clonezilla-encryption.png)
+    ![clonezilla-encryption](/assets/clonezilla/clonezilla-encryption.png)
 
-11. Leaving the default for the final action will allow you to see the results, and continue without needlessly.
+12. Leaving the default for the final action will allow you to see the results, and continue without needlessly.
 
-    ![clonezilla-level](/assets/clonezilla/clonezilla-reboot.png)
+    ![clonezilla-reboot](/assets/clonezilla/clonezilla-reboot.png)
 
-12. You will see a summary of the command that will be run. Press "enter" to continue.
+13. You will see a summary of the command that will be run. Press "enter" to continue.
 
-    ![clonezilla-level](/assets/clonezilla/clonezilla-confirmation.png)
+    ![clonezilla-confirmation](/assets/clonezilla/clonezilla-confirmation.png)
+
+## Mounting a Clonezilla image
+
