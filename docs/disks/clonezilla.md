@@ -42,47 +42,55 @@ These steps are for writing to a local device, the tool can also be used for wri
     > 
     > Refresh the view of the disk with the "Browse" option.
 
-4. Choose "Beginner"
+5. Choose "Beginner"
 
     ![clonezilla-level](/assets/clonezilla/clonezilla-level.png)
 
-5. Choose "savedisk", if you want to image specific partitions that is outside the scope of this guide.
+6. Choose "savedisk", if you want to image specific partitions that is outside the scope of this guide.
 
     ![clonezilla-level](/assets/clonezilla/clonezilla-save-type.png)
 
-6. Provide a file name for your image
+7. Provide a file name for your image
 
     ![clonezilla-name](/assets/clonezilla/clonezilla-name.png)
 
-7. Choose which disks you want to take an image of
+8. Choose which disks you want to take an image of
 
     > Identify your disk based on size and possibly by label.
 
     ![clonezilla-disk-sel](/assets/clonezilla/clonezilla-disk-sel.png)
 
-8. The default compression method should be fine.
+9. The default compression method should be fine.
 
     ![clonezilla-compression](/assets/clonezilla/clonezilla-compression.png)
 
-9. In most cases you should skip the disk check and use the default option that Clonezilla provides.
+10. In most cases you should skip the disk check and use the default option that Clonezilla provides.
 
     ![clonezilla-fs-check](/assets/clonezilla/clonezilla-fs-check.png)
 
-10. Checking the image was successful is the default and encouraged. Disable it if you want to save time.
+11. Checking the image was successful is the default and encouraged. Disable it if you want to save time.
 
     ![clonezilla-integrity](/assets/clonezilla/clonezilla-integrity.png)
 
-11. Encrypting the image is not withing the scope of this guide but is possible.
+12. Encrypting the image is not withing the scope of this guide but is possible.
 
     ![clonezilla-encryption](/assets/clonezilla/clonezilla-encryption.png)
 
-12. Leaving the default for the final action will allow you to see the results, and continue without needlessly.
+13. Leaving the default for the final action will allow you to see the results, and continue without needlessly.
 
     ![clonezilla-reboot](/assets/clonezilla/clonezilla-reboot.png)
 
-13. You will see a summary of the command that will be run. Press "enter" to continue.
+14. You will see a summary of the command that will be run. Press "enter" to continue.
 
     ![clonezilla-confirmation](/assets/clonezilla/clonezilla-confirmation.png)
+
+15. The last step before writing our image is the summary page. We assume everything is correct and type "y" then hit "enter".
+
+    ![clonezilla-summary](/assets/clonezilla/clonezilla-summary.png)
+
+16. When it is done you will be left with a success message, press "enter" to finish and fall back to a commandline.
+
+    ![clonezilla-finished](/assets/clonezilla/clonezilla-finished.png)
 
 ## Mounting a Clonezilla image
 
