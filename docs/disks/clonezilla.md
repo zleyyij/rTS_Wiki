@@ -92,5 +92,20 @@ These steps are for writing to a local device, the tool can also be used for wri
 
     ![clonezilla-finished](/assets/clonezilla/clonezilla-finished.png)
 
-## Mounting a Clonezilla image
+In the output directory you chose in step 4 you will now see a directory with the name you picked in step 7, inside the directory are many files which are a together a Clonezilla compatible image.
 
+## Mounting a Clonezilla image
+To do any work on your image it will need to be mounted like a drive. To do this we will convert the output files from above into a single file that can be mounted.
+
+### Notes
+* Our image was compressed with gzip by default and this guide expects that default was used.
+* By default Clonezilla seems to use `/tmp/ocsroot_bind_root` as the mountpoint of its storage drive. If you are using our guide straight through this directory should work. If it does not or if you are using an image created at another time then replace that path with your own.
+* We are writing our image to the same disk that it is already stored on. This will need up to 2x the original disk worth of space to succeed. If you do not have enough space on the original storage disk you may require a second.
+* We are running all commands in this section as root. `sudo su` is required to get us into the root user.
+
+```bash
+sudo su
+cat /tmp/ocsroot_bind_root/Image_Destination/Image_Name/*img.gz.* | gunzip | partclone.restore --restore_raw_file -C -s - -o /tmp/ocsroot_bind/Image_Destination/Disk.img
+
+mount /tmp/ocsroot_bind_root/Image_DestinationDisk.img /mnt
+```
