@@ -26,6 +26,9 @@ GNU ddrescue is a data recovery tool. It copies data from one file or block devi
     > If you do not know how to open a terminal, the goals of this guide are likely too advanced.
 
 2. `ddrescue -d -r3 /dev/sdX /mnt/disk/recovered.dd recovered.log`
+
+    > /dev/sdX is a place-holder for your disk.
+
     > This writes our image file to `/mnt/disk` and outputs a log to the current directory. `-d` tells ddrescue to use direct disk access and ignore the kernel’s cache. `-r3` tells ddrescue to retry bad sectors 3 times before giving up.
 
     > ❗ dd has no progress meter. You will know it completed when it moves to a new line.

@@ -27,7 +27,7 @@ These steps are for writing to a local device, the tool can also be used for wri
 
     ![clonezilla-local-dev](/assets/clonezilla/clonezilla-local-dev.png)
 
-3. Clonezilla enumerates all available devices then asks where to store the image we are making.
+3. Clonezilla lists all devices and asks where to store the image being made.
 
     > Select the location to STORE the image. Not the disk that we are making an image of.
 
@@ -76,7 +76,7 @@ These steps are for writing to a local device, the tool can also be used for wri
 
     ![clonezilla-encryption](/assets/clonezilla/clonezilla-encryption.png)
 
-13. Leaving the default for the final action will allow you to see the results, and continue without needlessly.
+13. Leaving the default for the final action will allow you to see the results, and continue without needlessly rebooting.
 
     ![clonezilla-reboot](/assets/clonezilla/clonezilla-reboot.png)
 
