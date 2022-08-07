@@ -1,13 +1,13 @@
 ---
 layout: default
-title: ddrescue Usage
+title: Using ddrescue
 nav_exclude: false
 has_children: false
 parent: Disks
 search_exclude: false
 last_modified_date: 2022-08-03
 ---
-# ddrescue Usage
+# Using ddrescue
 
 This article relies on the live media [created here](/docs/live-sessions/linux-live-session)
 
@@ -24,8 +24,6 @@ GNU ddrescue is a data recovery tool. It copies data from one file or block devi
 ### Steps
 1. In a terminal run `lsblk` to output the current disks seen by the machine. Identify the disk you want to operate on based on size and partition layout.
     > If you do not know how to open a terminal, the goals of this guide are likely too advanced.
-
-    ![ddrescue-lsblk.png](/assets/ddrescue/ddrescue-lsblk.png)
 
 2. `ddrescue -d -r3 /dev/sdX /mnt/disk/recovered.dd recovered.log`
     > This writes our image file to `/mnt/disk` and outputs a log to the current directory. `-d` tells ddrescue to use direct disk access and ignore the kernel’s cache. `-r3` tells ddrescue to retry bad sectors 3 times before giving up.
