@@ -5,17 +5,20 @@ nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2022-09-02
+last_modified_date: 2022-09-05
 ---
 
 
 # Breadboarding
+
 Known as an out of case install or "breadboarding" a computer.
 
 This is not a troubleshooting guide to troubleshoot a new build failure, but a guide to avoid one.
 New hardware that doesn't work is more common than you think, especially when it comes to Motherboards.
 
 The usual safety-first rules apply here: Stay grounded and don't do this on a carpeted floor or wearing clothing containing synthetics, because it creates static-electricity. A good idea is to wear an anti-static wrist-strap.
+
+*Credit to [Lee](https://forums.whatthetech.com/index.php?showtopic=120814) for this article*
 
 The first thing you need to find out and write down is your Motherboard's beep codes, either from the manual or from the manufacturer's support site on the Internet. You will then need a small speaker salvaged from an old case or temporally removed from the one you're about to install in, although some Motherboards have their own speaker built-in.
 
@@ -49,6 +52,3 @@ With the power off, lift the Motherboard and place it on a breadboard (breadboar
 You can now (with the power off) plug in your monitor, mouse and keyboard and enter the BIOS to make sure your boot priority is set to CD as first boot. If your optical drive is new, you can plug that in also to test it and even connect your hard drive and set up your OS if you want too! For help with setting up Windows, click [here](/windows).
 
 After you have disconnected everything, it's time to start installing your new hardware into your case with the foreknowledge that everything works. There are plenty of "how-to" guides on building a computer all over the net, so you don't need one here. Choose a recent one with photos.
-
-
-Credit for article goes to [Lee](https://forums.whatthetech.com/index.php?showtopic=120814)
